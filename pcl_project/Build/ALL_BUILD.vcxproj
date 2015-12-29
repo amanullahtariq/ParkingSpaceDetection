@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{620DE072-EAC7-4222-AD51-2B70F9DFB185}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\PCL 1.6.0\3rdParty\VTK\include\vtk-5.8;C:\Program Files\PCL 1.6.0\include\pcl-1.6;C:\Program Files\PCL 1.6.0\3rdParty\Eigen\include;C:\Program Files\PCL 1.6.0\3rdParty\Boost\include;C:\Program Files\OpenNI\Include;C:\Program Files\PCL 1.6.0\3rdParty\FLANN\include;C:\Program Files\PCL 1.6.0\3rdParty\Qhull\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\PCL 1.6.0\3rdParty\VTK\include\vtk-5.8;C:\Program Files\PCL 1.6.0\include\pcl-1.6;C:\Program Files\PCL 1.6.0\3rdParty\Eigen\include;C:\Program Files\PCL 1.6.0\3rdParty\Boost\include;C:\Program Files\OpenNI\Include;C:\Program Files\PCL 1.6.0\3rdParty\FLANN\include;C:\Program Files\PCL 1.6.0\3rdParty\Qhull\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\PCL 1.6.0\3rdParty\VTK\include\vtk-5.8;C:\Program Files\PCL 1.6.0\include\pcl-1.6;C:\Program Files\PCL 1.6.0\3rdParty\Eigen\include;C:\Program Files\PCL 1.6.0\3rdParty\Boost\include;C:\Program Files\OpenNI\Include;C:\Program Files\PCL 1.6.0\3rdParty\FLANN\include;C:\Program Files\PCL 1.6.0\3rdParty\Qhull\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\PCL 1.6.0\3rdParty\VTK\include\vtk-5.8;C:\Program Files\PCL 1.6.0\include\pcl-1.6;C:\Program Files\PCL 1.6.0\3rdParty\Eigen\include;C:\Program Files\PCL 1.6.0\3rdParty\Boost\include;C:\Program Files\OpenNI\Include;C:\Program Files\PCL 1.6.0\3rdParty\FLANN\include;C:\Program Files\PCL 1.6.0\3rdParty\Qhull\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/amanullahtariq/Documents/Visual Studio 2010/Projects/pcl_project/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" "-HC:/Users/amanullahtariq/Documents/Visual Studio 2010/Projects/pcl_project" "-BC:/Users/amanullahtariq/Documents/Visual Studio 2010/Projects/pcl_project/Build" --check-stamp-file "C:\Users\amanullahtariq\Documents\Visual Studio 2010\Projects\pcl_project\Build\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/amanullahtariq/Documents/Visual Studio 2010/Projects/pcl_project/CMakeLists.txt;C:\Users\amanullahtariq\Documents\Visual Studio 2010\Projects\pcl_project\CMakeLists.txt;C:\Users\amanullahtariq\Documents\Visual Studio 2010\Projects\pcl_project\Build\CMakeFiles\3.3.0-rc1\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\amanullahtariq\Documents\Visual Studio 2010\Projects\pcl_project\Build\CMakeFiles\3.3.0-rc1\CMakeCCompiler.cmake;C:\Users\amanullahtariq\Documents\Visual Studio 2010\Projects\pcl_project\Build\CMakeFiles\3.3.0-rc1\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;C:\Users\amanullahtariq\Documents\Visual Studio 2010\Projects\pcl_project\Build\CMakeFiles\3.3.0-rc1\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\PCL 1.6.0\cmake\PCLConfigVersion.cmake;C:\Program Files\PCL 1.6.0\cmake\PCLConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPkgConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindBoost.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigVersion.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfig.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigQt.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKTargets.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKTargets-debug.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKTargets-release.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\UseVTK.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeImportBuildSettings.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\CMake\vtkMakeInstantiator.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigVersion.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfig.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigQt.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\UseVTK.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigVersion.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfig.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigQt.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\UseVTK.cmake;C:\opencv\build\x64\vc12\lib\OpenCVConfig.cmake;C:\opencv\build\x64\vc12\lib\OpenCVModules.cmake;C:\opencv\build\x64\vc12\lib\OpenCVModules-debug.cmake;C:\opencv\build\x64\vc12\lib\OpenCVModules-release.cmake;C:\Users\amanullahtariq\Documents\Visual Studio 2010\Projects\pcl_project\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\amanullahtariq\Documents\Visual Studio 2010\Projects\pcl_project\Build\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/amanullahtariq/Documents/Visual Studio 2010/Projects/pcl_project/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" "-HC:/Users/amanullahtariq/Documents/Visual Studio 2010/Projects/pcl_project" "-BC:/Users/amanullahtariq/Documents/Visual Studio 2010/Projects/pcl_project/Build" --check-stamp-file "C:\Users\amanullahtariq\Documents\Visual Studio 2010\Projects\pcl_project\Build\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/amanullahtariq/Documents/Visual Studio 2010/Projects/pcl_project/CMakeLists.txt;C:\Users\amanullahtariq\Documents\Visual Studio 2010\Projects\pcl_project\CMakeLists.txt;C:\Users\amanullahtariq\Documents\Visual Studio 2010\Projects\pcl_project\Build\CMakeFiles\3.3.0-rc1\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\amanullahtariq\Documents\Visual Studio 2010\Projects\pcl_project\Build\CMakeFiles\3.3.0-rc1\CMakeCCompiler.cmake;C:\Users\amanullahtariq\Documents\Visual Studio 2010\Projects\pcl_project\Build\CMakeFiles\3.3.0-rc1\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;C:\Users\amanullahtariq\Documents\Visual Studio 2010\Projects\pcl_project\Build\CMakeFiles\3.3.0-rc1\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\PCL 1.6.0\cmake\PCLConfigVersion.cmake;C:\Program Files\PCL 1.6.0\cmake\PCLConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPkgConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindBoost.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigVersion.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfig.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigQt.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKTargets.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKTargets-debug.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKTargets-release.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\UseVTK.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeImportBuildSettings.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\CMake\vtkMakeInstantiator.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigVersion.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfig.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigQt.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\UseVTK.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigVersion.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfig.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigQt.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\UseVTK.cmake;C:\opencv\build\x64\vc12\lib\OpenCVConfig.cmake;C:\opencv\build\x64\vc12\lib\OpenCVModules.cmake;C:\opencv\build\x64\vc12\lib\OpenCVModules-debug.cmake;C:\opencv\build\x64\vc12\lib\OpenCVModules-release.cmake;C:\Users\amanullahtariq\Documents\Visual Studio 2010\Projects\pcl_project\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\amanullahtariq\Documents\Visual Studio 2010\Projects\pcl_project\Build\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/amanullahtariq/Documents/Visual Studio 2010/Projects/pcl_project/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" "-HC:/Users/amanullahtariq/Documents/Visual Studio 2010/Projects/pcl_project" "-BC:/Users/amanullahtariq/Documents/Visual Studio 2010/Projects/pcl_project/Build" --check-stamp-file "C:\Users\amanullahtariq\Documents\Visual Studio 2010\Projects\pcl_project\Build\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/amanullahtariq/Documents/Visual Studio 2010/Projects/pcl_project/CMakeLists.txt;C:\Users\amanullahtariq\Documents\Visual Studio 2010\Projects\pcl_project\CMakeLists.txt;C:\Users\amanullahtariq\Documents\Visual Studio 2010\Projects\pcl_project\Build\CMakeFiles\3.3.0-rc1\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\amanullahtariq\Documents\Visual Studio 2010\Projects\pcl_project\Build\CMakeFiles\3.3.0-rc1\CMakeCCompiler.cmake;C:\Users\amanullahtariq\Documents\Visual Studio 2010\Projects\pcl_project\Build\CMakeFiles\3.3.0-rc1\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;C:\Users\amanullahtariq\Documents\Visual Studio 2010\Projects\pcl_project\Build\CMakeFiles\3.3.0-rc1\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\PCL 1.6.0\cmake\PCLConfigVersion.cmake;C:\Program Files\PCL 1.6.0\cmake\PCLConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPkgConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindBoost.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigVersion.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfig.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigQt.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKTargets.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKTargets-debug.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKTargets-release.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\UseVTK.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeImportBuildSettings.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\CMake\vtkMakeInstantiator.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigVersion.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfig.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigQt.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\UseVTK.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigVersion.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfig.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigQt.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\UseVTK.cmake;C:\opencv\build\x64\vc12\lib\OpenCVConfig.cmake;C:\opencv\build\x64\vc12\lib\OpenCVModules.cmake;C:\opencv\build\x64\vc12\lib\OpenCVModules-debug.cmake;C:\opencv\build\x64\vc12\lib\OpenCVModules-release.cmake;C:\Users\amanullahtariq\Documents\Visual Studio 2010\Projects\pcl_project\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\amanullahtariq\Documents\Visual Studio 2010\Projects\pcl_project\Build\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/amanullahtariq/Documents/Visual Studio 2010/Projects/pcl_project/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" "-HC:/Users/amanullahtariq/Documents/Visual Studio 2010/Projects/pcl_project" "-BC:/Users/amanullahtariq/Documents/Visual Studio 2010/Projects/pcl_project/Build" --check-stamp-file "C:\Users\amanullahtariq\Documents\Visual Studio 2010\Projects\pcl_project\Build\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/amanullahtariq/Documents/Visual Studio 2010/Projects/pcl_project/CMakeLists.txt;C:\Users\amanullahtariq\Documents\Visual Studio 2010\Projects\pcl_project\CMakeLists.txt;C:\Users\amanullahtariq\Documents\Visual Studio 2010\Projects\pcl_project\Build\CMakeFiles\3.3.0-rc1\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\amanullahtariq\Documents\Visual Studio 2010\Projects\pcl_project\Build\CMakeFiles\3.3.0-rc1\CMakeCCompiler.cmake;C:\Users\amanullahtariq\Documents\Visual Studio 2010\Projects\pcl_project\Build\CMakeFiles\3.3.0-rc1\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;C:\Users\amanullahtariq\Documents\Visual Studio 2010\Projects\pcl_project\Build\CMakeFiles\3.3.0-rc1\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\PCL 1.6.0\cmake\PCLConfigVersion.cmake;C:\Program Files\PCL 1.6.0\cmake\PCLConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPkgConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindBoost.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigVersion.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfig.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigQt.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKTargets.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKTargets-debug.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKTargets-release.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\UseVTK.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeImportBuildSettings.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\CMake\vtkMakeInstantiator.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigVersion.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfig.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigQt.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\UseVTK.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigVersion.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfig.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\VTKConfigQt.cmake;C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\UseVTK.cmake;C:\opencv\build\x64\vc12\lib\OpenCVConfig.cmake;C:\opencv\build\x64\vc12\lib\OpenCVModules.cmake;C:\opencv\build\x64\vc12\lib\OpenCVModules-debug.cmake;C:\opencv\build\x64\vc12\lib\OpenCVModules-release.cmake;C:\Users\amanullahtariq\Documents\Visual Studio 2010\Projects\pcl_project\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\amanullahtariq\Documents\Visual Studio 2010\Projects\pcl_project\Build\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/amanullahtariq/Documents/Visual Studio 2010/Projects/pcl_project/Build/ZERO_CHECK.vcxproj">
+      <Project>9381490D-E245-4948-A77E-F410F06A9E8F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/amanullahtariq/Documents/Visual Studio 2010/Projects/pcl_project/Build/pcl_project.vcxproj">
+      <Project>4A24416D-6468-48BE-AFDC-7B91BF553207</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

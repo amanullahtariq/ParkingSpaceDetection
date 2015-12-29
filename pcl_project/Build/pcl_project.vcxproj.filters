@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\linear\linear.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Constant.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\region_growing\region_growing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\linear\tron.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\linear\daxpy.c">
+      <Filter>Libliner</Filter>
+    </ClCompile>
+    <ClCompile Include="..\linear\ddot.c">
+      <Filter>Libliner</Filter>
+    </ClCompile>
+    <ClCompile Include="..\linear\dnrm2.c">
+      <Filter>Libliner</Filter>
+    </ClCompile>
+    <ClCompile Include="..\linear\dscal.c">
+      <Filter>Libliner</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadWrite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LineRelationsAngle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LinesByLength.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MidPointRelations.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLines.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ParkingSpots.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RectDetail.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ParkingSpaceDetection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{ADE32293-150D-4467-A939-42EE20DA3E09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{22129653-d741-4e85-9ea2-5578fedaae67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libliner">
+      <UniqueIdentifier>{8753178c-813b-4e59-aa97-cf23c38585f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Custom Headers">
+      <UniqueIdentifier>{afc6aacb-f46f-47ea-bb93-45e14db1403d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\region_growing\region_growing.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Constant.h">
+      <Filter>Header Files\Custom Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\region_growing\region_growing.h">
+      <Filter>Header Files\Custom Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\linear\linear.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\linear\tron.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\linear\blasp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\linear\blas.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadWrite.h">
+      <Filter>Header Files\Custom Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files\Custom Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files\Custom Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="LineRelationsAngle.h">
+      <Filter>Header Files\Custom Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="LinesByLength.h">
+      <Filter>Header Files\Custom Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="MidPointRelations.h">
+      <Filter>Header Files\Custom Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ParkingSpots.h">
+      <Filter>Header Files\Custom Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="RectDetail.h">
+      <Filter>Header Files\Custom Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLines.h">
+      <Filter>Header Files\Custom Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ParkingSpaceDetection.h">
+      <Filter>Header Files\Custom Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
