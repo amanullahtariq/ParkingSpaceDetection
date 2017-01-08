@@ -15,9 +15,10 @@ Beta Version
 
 * Summary of set up
 For this project to run you need:
-1) Visual Studio 2012
-2) OpenCV 3.0
-3) Point Cloud Library
+      - 1) Visual Studio 2012
+      - 2) OpenCV 3.0
+      - 3) Point Cloud Library
+
 
 * To see how to work with OpenCV in visual studio please take a look at the following link:
 [Link URL](http://amanullahtariq.com/using-opencv-3-0-with-visual-studio-2013/)
