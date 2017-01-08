@@ -1,5 +1,5 @@
 # README #
-This project is maintain no longer if you want to access it please contact me and order to get insight of this project check out the presentation[http://www.slideshare.net/AmanullahTariq/parking-space-detect-70787242]
+This project is maintain no longer if you want to work or used it please [contact me](#contact). In order to get insight of this project check out the [presentation](http://www.slideshare.net/AmanullahTariq/parking-space-detect-70787242)
 
 
 * Quick summary
@@ -20,10 +20,10 @@ For this project to run you need:
 3) Point Cloud Library
 
 * To see how to work with OpenCV in visual studio please take a look at the following link:
-[http://amanullahtariq.com/using-opencv-3-0-with-visual-studio-2013/](Link URL)
+[Link URL](http://amanullahtariq.com/using-opencv-3-0-with-visual-studio-2013/)
 
 * To see how can we configure PCL and OPENCV together take a look at the following link:
-[http://amanullahtariq.com/integerating-pcl-1-6-with-opencv-3-0-on-visual-studio-2012/](Link URL)
+[Link URL](http://amanullahtariq.com/integerating-pcl-1-6-with-opencv-3-0-on-visual-studio-2012/)
 
 
 ### Who do I talk to? ###
