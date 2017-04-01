@@ -1,8 +1,5 @@
-
 #include <iostream>
 #include "Source.h"
-#include <cv.h>
-#include <highgui.h>
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
@@ -12,6 +9,7 @@
 #include <fstream>
 #include <string>
 #include <iomanip>
+
 using namespace cv;
 using namespace std;
 
@@ -178,12 +176,6 @@ void loadHough(string path)
 
 	//applying filtering.
 	bilateralFilter (src, dst2, MAX_KERNEL_LENGTH, MAX_KERNEL_LENGTH * 2, MAX_KERNEL_LENGTH / 2);
-
-	/*for (int i = 1; i < MAX_KERNEL_LENGTH; i = i + 2)
-	{
-		bilateralFilter(src, dst2, i, i * 2, i / 2);
-	}
-*/
 	imshow("bilateral", dst2);
 	imshow("normal", src);
 
@@ -215,12 +207,6 @@ void loadHough(string path)
 	{
 		Vec4i l = lines[i];
 
-		//if (l[3] == 0)
-		//{
-		//	// this is so that when we find the angle, we don't divide a number by 0 which gives us runtime exception.
-		//	l[3] += 1;
-		//}
-
 		cout << "l[0] = " << l[0] << endl;
 		cout << "l[1]= " << l[1] << endl;
 		cout << "l[2]= " << l[2] << endl;
@@ -233,22 +219,13 @@ void loadHough(string path)
 		
 		cout << "Found angle = " << ((atan((l[3] - l[1]) / denom)) * 180 / 3.14) << endl;
 		std::string::size_type sz;;
-		//line(cdst, Point(l[0], l[1]), Point(l[2], l[3]), Scalar(0, 0, 255), 2, .01);
-		//circle(cdst, Point(l[0], l[1]), 2.0, Scalar(255, 0, 0), 5, 8);
+
 
 
 		CheckLineExistance(*new MyLines(l[0], l[1], l[2], l[3], (atan2((l[2] - l[0]), (l[3] - l[1])) * 180 / 3.14)));
-		//			CheckLineExistance(*new MyLines(l[0], l[1], l[2], l[3], roundf(((atan(l[3] - l[1] / l[2] - l[0]) * 180 / 3.14)*100)/100)));
+	
 	}
 
-	/*for (int i = 0; i < mylinerelations.size(); i++)
-	{
-		for (int j = 0; j < mylinerelations[i].getLines().size(); j++)
-		{
-			line(cdst, Point(mylinerelations[i].getLines()[j].getX1(), mylinerelations[i].getLines()[j].getY1()), Point(mylinerelations[i].getLines()[j].getX2(), mylinerelations[i].getLines()[j].getY2()), Scalar(0, 0, 255), 2, .01);
-		}
-	}
-*/
 	Point pt = Point(10, 8);
 
 
@@ -318,13 +295,8 @@ void loadHough(string path)
 
 	center *= (1. / corners.size());
 
-	//	sortCorners(corners, center);
 #endif
 
-	//	for (int i = 0; i < corners.size(); i++)
-	//circle(cdst, Point(corners.at(i).x, corners.at(i).y), 2.0, Scalar(255, 0, 0), 1, 8);
-
-	//imshow("source", src);
 	imshow("detected lines", cdst);
 
 	waitKey();
@@ -334,7 +306,7 @@ void loadHough(string path)
 
 int main(int argc, char** argv)
 {
-	string path = "E:\\soft\\softwares and files\\openCV\\svn\\team4\\parkingspacedetection\\parkingdetect\\parkingdetect\\ikea.png";
+	string path = "D:\\repo\\bitbucket\\ParkingSpace\\parkingdetect\\parkingdetect\\images\\test.jpg";
 	loadHough(path);
 	return 0;
 
