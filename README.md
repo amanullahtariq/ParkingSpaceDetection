@@ -4,6 +4,8 @@ Parking Detection
 This project is maintain no longer if you want to work or used it please [contact me](#contact). In order to get insight of this project check out the [presentation](http://www.slideshare.net/AmanullahTariq/parking-space-detect-70787242)
 
 
+### Announcement: This project is not maintained anymore
+
 ## Quick summary
 This is the code to detect the parking space for the car given 2D image from the google maps and 3D point Cloud data of the current enivornment.
 
@@ -40,10 +42,3 @@ For this project to run you need:
 * Visual Studio 2012
 * OpenCV 3.0
 * Point Cloud Library
-
-### Who do I talk to? ###
-I would be happy to talk to you about this project and if you are interested then we can further enhance this project to.
-
-### Contact
-* Amanullah Tariq 
-* Email: amanullah.tariq@gmail.com
